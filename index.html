@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ============================================================
+       EDIT ME: The title and description below are what Google
+       shows in search results. Keep "Hannah Stewart" + descriptor
+       together and consistent with your LinkedIn headline.
+       ============================================================ -->
+  <title>Hannah Stewart — AI Governance Researcher &amp; Facilitator</title>
+  <meta name="description" content="Hannah Stewart is an AI governance researcher and facilitator, leading AI transition and governance work at the Ellen MacArthur Foundation and running AI ethics workshops through Intersticia.">
+
+  <!-- TODO: replace with your real domain once registered -->
+  <link rel="canonical" href="https://YOUR-DOMAIN-HERE.com/">
+
+  <!-- Social sharing preview (LinkedIn, etc.) -->
+  <meta property="og:title" content="Hannah Stewart — AI Governance Researcher &amp; Facilitator">
+  <meta property="og:description" content="AI governance researcher and facilitator. Ellen MacArthur Foundation · Intersticia.">
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://YOUR-DOMAIN-HERE.com/">
+  <meta property="og:image" content="https://YOUR-DOMAIN-HERE.com/photo.jpg">
+
+  <!-- ============================================================
+       Person schema (JSON-LD). This is what helps Google connect
+       "this Hannah Stewart" to your LinkedIn/GitHub and understand
+       who you are. Update the sameAs URLs when you fill in links.
+       ============================================================ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Hannah Stewart",
+    "jobTitle": "Senior AI and Tech Researcher",
+    "description": "AI governance researcher and facilitator",
+    "url": "https://YOUR-DOMAIN-HERE.com/",
+    "image": "https://YOUR-DOMAIN-HERE.com/photo.jpg",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Ellen MacArthur Foundation",
+      "url": "https://www.ellenmacarthurfoundation.org/"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/hannah-stewart-2a399913b/",
+      "https://github.com/HStewart23",
+      "https://www.intersticia.org/about",
+      "https://brave-conversations.webflow.io/"
+    ]
+  }
+  </script>
+
+  <!-- Fonts: Newsreader for the name/headings, IBM Plex Sans for text -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    /* ==========================================================
+       Design tokens — change colours or fonts in one place here.
+       ========================================================== */
+    :root {
+      --paper: #FBFAF7;        /* page background */
+      --ink: #1C2B33;          /* main text */
+      --ink-soft: #4A5B63;     /* secondary text */
+      --sea: #146B65;          /* accent — links, details */
+      --sea-tint: #DCEBE8;     /* pale accent for underlines/hover */
+      --rule: #E4E1D8;         /* hairline dividers */
+      --display: "Newsreader", Georgia, serif;
+      --body: "IBM Plex Sans", -apple-system, "Segoe UI", sans-serif;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--body);
+      font-size: 1.0625rem;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .page {
+      max-width: 40rem;
+      margin: 0 auto;
+      padding: 5rem 1.5rem 4rem;
+    }
+
+    /* ---------- Header: photo + name ---------- */
+    header {
+      display: flex;
+      align-items: flex-end;
+      gap: 1.75rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .portrait {
+      width: 108px;
+      height: 108px;
+      object-fit: cover;
+      border-radius: 4px;
+      flex-shrink: 0;
+      /* the one flourish: an offset accent edge behind the photo */
+      box-shadow: -8px 8px 0 var(--sea-tint);
+    }
+
+    h1 {
+      font-family: var(--display);
+      font-weight: 500;
+      font-size: clamp(2.4rem, 7vw, 3.2rem);
+      line-height: 1.05;
+      letter-spacing: -0.01em;
+    }
+
+    .strapline {
+      font-family: var(--display);
+      font-style: italic;
+      font-size: 1.25rem;
+      color: var(--sea);
+      margin-top: 0.4rem;
+    }
+
+    /* ---------- Bio ---------- */
+    .bio p + p { margin-top: 1rem; }
+    .bio a { color: var(--sea); text-decoration-thickness: 1.5px; text-underline-offset: 3px; }
+    .bio a:hover { background: var(--sea-tint); }
+
+    /* ---------- Links row ---------- */
+    nav {
+      margin-top: 2.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--rule);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1.75rem;
+    }
+
+    nav a {
+      font-weight: 500;
+      color: var(--ink);
+      text-decoration: none;
+      border-bottom: 3px solid var(--sea-tint);
+      padding-bottom: 2px;
+      transition: border-color 120ms ease;
+    }
+
+    nav a:hover, nav a:focus-visible { border-color: var(--sea); }
+    a:focus-visible { outline: 2px solid var(--sea); outline-offset: 3px; }
+
+    footer {
+      margin-top: 3.5rem;
+      font-size: 0.85rem;
+      color: var(--ink-soft);
+    }
+
+    /* ---------- Small screens ---------- */
+    @media (max-width: 480px) {
+      .page { padding-top: 3rem; }
+      header { flex-direction: column; align-items: flex-start; gap: 1.5rem; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <header>
+      <!-- Drop your photo into the repo as photo.jpg (square crop works best) -->
+      <img class="portrait" src="photo.jpg" alt="Portrait of Hannah Stewart">
+      <div>
+        <h1>Hannah Stewart</h1>
+        <p class="strapline">AI governance researcher &amp; facilitator</p>
+      </div>
+    </header>
+
+    <section class="bio">
+      <p>
+        I'm a Senior AI and Tech Researcher at the
+        <a href="https://www.ellenmacarthurfoundation.org/">Ellen MacArthur Foundation</a>,
+        where I lead work on the organisation's AI transition and governance —
+        from evaluating emerging regulation to building research tools that put
+        AI to work responsibly in circular economy research.
+      </p>
+      <p>
+        Through <a href="https://www.intersticia.org/about">Intersticia</a> I design
+        and facilitate AI ethics workshops that get people out from behind their
+        screens and thinking critically about how these systems actually behave,
+        including through <a href="https://brave-conversations.webflow.io/">Brave Conversations.
+      </p>
+      <p>
+        My background spans web development, research infrastructure, and an MSc
+        in the Social Science of the Internet from the University of Oxford. I'm
+        interested in AI governance and policy and responsible technology.
+      </p>
+    </section>
+
+    <nav aria-label="Profiles and contact">
+      <a href="https://www.linkedin.com/in/hannah-stewart-2a399913b/">LinkedIn</a>
+      <a href="https://www.intersticia.org/about">Intersticia</a>
+      <a href="https://brave-conversations.webflow.io/">Brave Conversations</a>
+      <a href="https://github.com/HStewart23">GitHub</a>
+      <!-- Add more links here as needed, e.g.
+      <a href="mailto:you@example.com">Email</a> -->
+    </nav>
+
+    <footer>
+      <p>&copy; 2026 Hannah Stewart</p>
+    </footer>
+
+  </div>
+</body>
+</html>
