@@ -2,7 +2,7 @@
 
 My personal website — a short bio, photo, and links out to LinkedIn, GitHub, and Intersticia.
 
-Live at: ~~~~
+Live at: [https://hstewart23.github.io/public_website/](https://hstewart23.github.io/public_website/)
 
 ## What is it
 
