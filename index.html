@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hannah Stewart — AI Governance Researcher &amp; Facilitator</title>
-  <meta name="description" content="Hannah Stewart is an AI governance researcher and facilitator, leading AI transition and governance work at the Ellen MacArthur Foundation and running AI ethics workshops through Intersticia.">
+  <title>Hannah Stewart · Applied AI Builder &amp; Facilitator</title>
+  <meta name="description" content="Hannah Stewart builds applied AI systems for mission-driven organisations: production LLM research pipelines at the Ellen MacArthur Foundation, AI governance, and embodied AI ethics workshops through Intersticia.">
 
   <!-- domain -->
   <link rel="canonical" href="https://hstewart23.github.io/public_website/">
 
   <!-- Social sharing preview -->
-  <meta property="og:title" content="Hannah Stewart — AI Governance Researcher &amp; Facilitator">
-  <meta property="og:description" content="AI governance researcher and facilitator. Ellen MacArthur Foundation · Intersticia.">
+  <meta property="og:title" content="Hannah Stewart · Applied AI Builder &amp; Facilitator">
+  <meta property="og:description" content="Building applied AI for mission-driven organisations. Ellen MacArthur Foundation · Intersticia.">
   <meta property="og:type" content="profile">
   <meta property="og:url" content="https://hstewart23.github.io/public_website/">
   <meta property="og:image" content="https://hstewart23.github.io/public_website/">
@@ -23,7 +23,7 @@
     "name": "Hannah Stewart",
     "alternateName": "Hannah Eva Stewart",
     "jobTitle": "Senior AI and Tech Researcher",
-    "description": "AI governance researcher and facilitator",
+    "description": "Applied AI builder, researcher and facilitator",
     "url": "https://hstewart23.github.io/public_website/",
     "image": "https://hstewart23.github.io/public_website/photo.jpg",
     "worksFor": {
@@ -110,8 +110,41 @@
 
     /* ---------- Bio ---------- */
     .bio p + p { margin-top: 1rem; }
-    .bio a { color: var(--sea); text-decoration-thickness: 1.5px; text-underline-offset: 3px; }
-    .bio a:hover { background: var(--sea-tint); }
+    .bio a, .work a { color: var(--sea); text-decoration-thickness: 1.5px; text-underline-offset: 3px; }
+    .bio a:hover, .work a:hover { background: var(--sea-tint); }
+
+    /* ---------- Selected work ---------- */
+    .work {
+      margin-top: 2.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--rule);
+    }
+
+    .work h2 {
+      font-family: var(--display);
+      font-weight: 500;
+      font-size: 1.5rem;
+      letter-spacing: -0.01em;
+      margin-bottom: 1.25rem;
+    }
+
+    .work article + article {
+      margin-top: 1.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--rule);
+    }
+
+    .work h3 {
+      font-family: var(--body);
+      font-weight: 500;
+      font-size: 1.0625rem;
+      margin-bottom: 0.35rem;
+    }
+
+    .work .links {
+      margin-top: 0.5rem;
+      font-size: 0.95rem;
+    }
 
     /* ---------- Links row ---------- */
     nav {
@@ -159,17 +192,20 @@
       <img class="portrait" src="photo.jpeg" alt="Portrait of Hannah Stewart">
       <div>
         <h1>Hannah Stewart</h1>
-        <p class="strapline">AI governance researcher &amp; facilitator</p>
+        <p class="strapline">Applied AI builder &amp; facilitator</p>
       </div>
     </header>
 
     <section class="bio">
       <p>
-        I'm a Senior AI and Tech Researcher at the
+        I build AI systems for mission-driven organisations, and teach the
+        people around them to use AI well. As Senior AI and Tech Researcher at the
         <a href="https://www.ellenmacarthurfoundation.org/">Ellen MacArthur Foundation</a>,
-        where I lead work on the organisation's AI transition and governance —
-        from evaluating emerging regulation to building research tools that put
-        AI to work responsibly in circular economy research.
+        I develop the LLM tooling behind the Foundation's research, most recently
+        a retrieval pipeline that powers a published international policy
+        analysis, and lead its organisation-wide AI transition: vendor
+        evaluation, UK GDPR analysis, governance, and structured upskilling
+        across a 200-person organisation.
       </p>
       <p>
         Through <a href="https://www.intersticia.org/about">Intersticia</a> I design
@@ -178,26 +214,71 @@
         including through <a href="https://brave-conversations.webflow.io/">Brave Conversations</a>.
       </p>
       <p>
-        The flagship of that work is The Simulation Game an
-        embodied workshop in which participants enact the support structure of
-        a large language model: moving, speaking, and negotiating as the system
-        they usually only type at. Designed to surface how AI reshapes group
-        dynamics, it has been run with teams and audiences internationally and
-        is openly published as a documented, citable research instrument
-        <a href="https://github.com/HStewart23/The-Simulation-Game-Learning-LLMs-in-Groups">on GitHub</a>.
+        I started out as a web developer, spending three years shipping
+        user-facing features in TypeScript and React on the Foundation's public
+        website before moving into applied AI. I hold an MSc in the Social
+        Science of the Internet from the University of Oxford, where I studied
+        how the design of research tools shapes the way people seek and trust
+        information, questions that now sit at the heart of LLM-mediated
+        knowledge work.
       </p>
-      <p>
-        My background spans web development, research infrastructure, and an MSc
-        in the Social Science of the Internet from the University of Oxford. I'm
-        interested in AI governance and policy and responsible technology.
-      </p>
+    </section>
+
+    <section class="work" aria-label="Selected work">
+      <h2>Selected work</h2>
+
+      <article>
+        <h3>Circular by Nature: AI-assisted policy analysis pipeline</h3>
+        <p>
+          Designed, built, and validated the retrieval-augmented analysis
+          pipeline behind <em>Circular by Nature</em> (EMF and the Latin America
+          and Caribbean Circular Economy Coalition, 2026): GROBID PDF parsing,
+          sentence-transformer embeddings indexed in FAISS, and a hierarchical
+          roll-up architecture in which the model answers atomic evidence
+          questions strictly from retrieved context before findings are
+          synthesised upwards, so every conclusion stays traceable to source
+          text. Validated against manually identified ground truth on pilot
+          countries, then scaled to 31 policy instruments across 12 countries.
+          The methodology is published as a standalone technical appendix.
+        </p>
+        <p class="links">
+          <a href="https://content.ellenmacarthurfoundation.org/asset/083641b9-6b33-4b05-aff0-2f2e6fa1bf95/Report-Biomaterials-V5_Appendix.pdf">Technical appendix (PDF)</a> ·
+          <a href="https://content.ellenmacarthurfoundation.org/asset/2578c27d-7984-44bf-b58c-d947df672b33/Report-Biomaterials-V8-E-06-26.pdf">Full report (PDF)</a>
+        </p>
+      </article>
+
+      <article>
+        <h3>The Simulation Game</h3>
+        <p>
+          An embodied workshop in which participants enact the support structure
+          of a large language model: moving, speaking, and negotiating as the
+          system they usually only type at. Designed to surface how AI reshapes
+          group dynamics, it has been run with teams and audiences
+          internationally, including at WebSci26, and is openly published as a
+          documented, citable research instrument.
+        </p>
+        <p class="links">
+          <a href="https://github.com/HStewart23/The-Simulation-Game-Learning-LLMs-in-Groups">Workshop repository on GitHub</a>
+        </p>
+      </article>
+
+      <article>
+        <h3>AI adoption and governance at EMF</h3>
+        <p>
+          Led the Foundation's transition to enterprise AI: evaluating vendors
+          against technical, security, and data protection criteria, authoring
+          the AI Use Policy and governance framework with in-house legal
+          counsel, and designing the literacy programme that took colleagues
+          across every team from first prompt to confident daily practice.
+        </p>
+      </article>
     </section>
 
     <nav aria-label="Profiles and contact">
       <a href="https://www.linkedin.com/in/hannah-stewart-2a399913b/">LinkedIn</a>
+      <a href="https://github.com/HStewart23">GitHub</a>
       <a href="https://www.intersticia.org/about">Intersticia</a>
       <a href="https://brave-conversations.webflow.io/">Brave Conversations</a>
-      <a href="https://github.com/HStewart23">GitHub</a>
     </nav>
 
     <footer>
