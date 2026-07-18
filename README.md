@@ -1,4 +1,4 @@
-# Hannah Eva Stewart's Personal Website
+# Hannah Stewart's Personal Website
 
 A short bio, photo, and links out to LinkedIn, GitHub, and Intersticia.
 
